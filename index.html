@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>IAPP Membership Checkout</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-logo">
+            <img src="https://iapp.org/wp-content/themes/iapp/static/img/iapp25_logo.svg" alt="IAPP Logo" height="40">
+        </div>
+        <ul class="nav-links">
+            <li><a href="#"><strong>News</strong></a></li>
+            <li><a href="#"><strong>Connect</strong></a></li>
+            <li><a href="#"><strong>Train</strong></a></li>
+            <li><a href="#"><strong>Certify</strong></a></li>
+            <li><a href="#"><strong>Resources</strong></a></li>
+            <li><a href="#"><strong>Conferences</strong></a></li>
+            <li><a href="#"><strong>Join</strong></a></li>
+        </ul>
+    </nav>
+
+    <div class="checkout-container">
+        <h1>IAPP Membership Checkout</h1>
+        <form class="checkout-form">
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="membership">Membership Type</label>
+            <select id="membership" name="membership" required>
+                <option value="">Select a membership</option>
+                <option value="basic">Basic</option>
+                <option value="premium">Premium</option>
+                <option value="vip">VIP</option>
+            </select>
+
+            <label for="cardnumber">Card Number</label>
+            <input type="text" id="cardnumber" name="cardnumber" placeholder="1234 5678 9012 3456" required>
+
+            <div class="card-details">
+                <div>
+                    <label for="expiry">Expiry Date</label>
+                    <input type="text" id="expiry" name="expiry" placeholder="MM/YY" required>
+                </div>
+                <div>
+                    <label for="cvv">CVV</label>
+                    <input type="text" id="cvv" name="cvv" placeholder="123" required>
+                </div>
+            </div>
+
+            <div class="payment-icons">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png" alt="Visa" height="30">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" alt="Mastercard" height="30">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/30/American_Express_logo.svg" alt="American Express" height="30">
+                <img src="https://www.logo.wine/a/logo/Apple_Pay/Apple_Pay-White-Dark-Background-Logo.wine.svg" alt="Apple Pay" height="30">
+            </div>
+
+            <button type="submit">Submit Payment</button>
+        </form>
+    </div>
+</body>
+</html>
